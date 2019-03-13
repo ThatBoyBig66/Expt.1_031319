@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	double nb, p, d1, d2,i, ave_dailybalance, interest;
+	cout << "Enter net balance: " << endl;
+	cin >> nb;
+
+	cout << "Enter made payment: " << endl;
+	cin >> p;
+
+	cout << "Enter days in the billing cycle: " << endl;
+	cin >> d1;
+
+	cout << "Enter the number of days payment is done before billing cycle: "<< endl;
+	cin >> d2;
+
+	cout << "Enter interest rate: " << endl;
+	cin >> i;
+
+	ave_dailybalance = (nb*d1-p*d2)/d1;
+	interest = (ave_dailybalance*i);
+	cout << "interest = "<< interest << endl;
+
+	_getch();
+	return 0;
+}

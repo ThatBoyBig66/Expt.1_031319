@@ -1,0 +1,38 @@
+#include<iostream>
+#include<conio.h>
+#include<string>
+#include<iomanip>
+using namespace std;
+
+int main ()
+{
+	float tix1, tix2, tix3, tix4;
+	float st1, st2, st3, st4;
+	float stx1, stx2, stx3, stx4;
+	float ttix, ttsale;
+	tix1 = 250;
+	tix2 = 100;
+	tix3 = 50;
+	tix4 = 25;
+	cout << "Ticket Price:				Ticket/s Sold:" << endl;
+	cout << "250					";
+	cin	>> st1;
+	cout << "100					";
+	cin	>> st2;
+	cout << "50					";
+	cin	>> st3;
+	cout << "25					";
+	cin	>> st4;
+	cout << "---------------------------------------------" << endl;
+	stx1 = tix1 * st1;
+	stx2 = tix2 * st2;
+	stx3 = tix3 * st3;
+	stx4 = tix4 * st4;
+	ttix = st1 + st2 + st3 + st4;
+	ttsale = stx1 + stx2 + stx3 + stx4;
+	cout << "Number of tickets sold:" << ttix <<endl;
+	cout << "Sum of sales: P" << setprecision(2) <<fixed << tix1 * st1 + tix2 * st2 + tix3 * st3 + tix4 * st4 <<endl; 
+
+	_getch ();
+	return 0;
+}
